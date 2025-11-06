@@ -11,10 +11,10 @@ const TimeInput = ({ add }: Props) => {
   const [hours, setHours] = useState("");
 
   const handleSubmit = () => {
-    add(activity,Number(hours))
-    setActivity('')
-    setHours('')
-  }
+    add(activity, Number(hours));
+    setActivity("");
+    setHours("");
+  };
 
   return (
     <div className="space-y-4">
@@ -29,7 +29,9 @@ const TimeInput = ({ add }: Props) => {
         value={hours}
         onChange={(e) => setHours(e.target.value)}
       />
-      <Button className="w-full" onClick={handleSubmit}>Add Activity</Button>
+      <Button className="w-full" onClick={handleSubmit}>
+        Add Activity
+      </Button>
     </div>
   );
 };
